@@ -1,0 +1,23 @@
+<head>
+    <title>My Design</title>
+     <style>
+      canvas{
+          border: 5px solid gold;
+      }
+      </style>
+      <script async>
+      window.onload =init;
+      function init() {
+          var canvas = document.querySelector('canvas');
+          var ctx = canvas.getContext('2d');
+          ctx.fillstyle ='red';
+          ctx.fillRect(0,0,300,300);
+          ctx.font="20px Georgia"
+          ctx.fillText("Hello World!",10,50);
+           }
+      </script>
+      </head>
+      <body>
+          <canvas id="canvas" width=100 height=100 style="background-color: red"></canvas>
+      </body>
+      </html>
